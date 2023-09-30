@@ -1,2 +1,2 @@
 # db_ecommerce
- Desafio do curso da DIO
+ Desafio do curso da DIO, curso Ciência de Dados utilizando Python.
