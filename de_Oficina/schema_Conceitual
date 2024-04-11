@@ -1,0 +1,53 @@
+
+Cliente
+    ID (chave primária)
+    Nome
+    Veículo
+
+Veículo
+    ID (chave primária)
+    Modelo
+    Placa
+    Ano de fabricação
+
+Equipe de Mecânicos
+    ID (chave primária)
+    Código
+    Nome
+    Endereço
+    Especialidade
+
+Ordem de Serviço (OS)
+    Número (chave primária)
+    Data de Emissão
+    Valor Total
+    Status (em andamento, concluída, cancelada, etc.)
+    Data de Conclusão
+    Cliente (chave estrangeira referenciando o Cliente)
+    Veículo (chave estrangeira referenciando o Veículo)
+    Equipe de Mecânicos (chave estrangeira referenciando a Equipe de Mecânicos)
+
+Serviço
+    ID (chave primária)
+    Descrição
+    Valor (baseado na tabela de referência de mão-de-obra)
+    Ordem de Serviço (chave estrangeira referenciando a OS)
+
+Peça
+    ID (chave primária)
+    Nome
+    Valor
+    Ordem de Serviço (chave estrangeira referenciando a OS)
+    Relacionamentos:
+    Um Cliente pode ter vários Veículos.
+    Um Veículo é atribuído a apenas uma Ordem de Serviço.
+    Uma Ordem de Serviço pode conter vários Serviços.
+    Uma Ordem de Serviço pode incluir várias Peças.
+    Uma Ordem de Serviço é realizada por uma Equipe de Mecânicos.
+
+Relacionamentos:
+    Um Cliente pode ter vários Veículos.
+    Um Veículo é atribuído a apenas uma Ordem de Serviço.
+    Uma Ordem de Serviço pode conter vários Serviços.
+    Uma Ordem de Serviço pode incluir várias Peças.
+    Uma Ordem de Serviço é realizada por uma Equipe de Mecânicos.
